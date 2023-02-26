@@ -1,5 +1,20 @@
 import java.util.Scanner;
+/*
+Algorithm:
 
+Read the number of test cases.
+For each test case:
+a. Read the number of messages.
+b. Read the list of message times.
+c. Add two extra elements to the list representing the start and end of the day.
+d. For each consecutive pair of elements, count the number of walks that can be scheduled
+   between them, by dividing the time between them by the length of a walk.
+e. Return the sum of all the counts.
+f. If the sum is at least 2, output YES. Otherwise, output NO.
+
+Time complexity: O(n), where n is the length of the input array.
+Space complexity: O(n), since we create a new array with two extra elements.
+*/
 public class Main {
 
     //@ requires t > 0;
@@ -54,21 +69,4 @@ public class Main {
         return ans;
     }
 }
-
-/*
-Algorithm:
-
-Read the number of test cases.
-For each test case:
-a. Read the number of messages.
-b. Read the list of message times.
-c. Add two extra elements to the list representing the start and end of the day.
-d. For each consecutive pair of elements, count the number of walks that can be scheduled
-   between them, by dividing the time between them by the length of a walk.
-e. Return the sum of all the counts.
-f. If the sum is at least 2, output YES. Otherwise, output NO.
-
-Time complexity: O(n), where n is the length of the input array.
-Space complexity: O(n), since we create a new array with two extra elements.
-*/
 
